@@ -130,7 +130,6 @@
                                $('.profi').css('display','none')
 			        $('.ausbild').css('transform','none');
                                $('.ausbild').css('opacity','1');
-
                        }
                })
 
