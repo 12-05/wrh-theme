@@ -33,7 +33,7 @@
     <?php 
         $hero = $block['hero_aktion'];
         if($hero['aktiv']) {?>
-        <a href="<?php echo $hero['link'];?>"><img src="<?php echo $hero['bild'];?>" alt="Aktion" /></a>
+        <a class="hero-aktion" href="<?php echo $hero['link'];?>"><img src="<?php echo $hero['bild'];?>" alt="Aktion" /></a>
         <?php } ?>
 </div>
 <style>
