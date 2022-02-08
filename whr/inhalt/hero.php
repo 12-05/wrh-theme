@@ -30,6 +30,11 @@
 
     <?php }?>
     <img class="baum-siegel" src="/wp-content/uploads/2021/12/Libertas_Baumsiegel.png">
+    <?php 
+        $hero = $block['hero_aktion'];
+        if($hero['aktiv']) {?>
+        <a href="<?php echo $hero['link'];?>"><img src="<?php echo $hero['bild'];?>" alt="Aktion" /></a>
+        <?php } ?>
 </div>
 <style>
     .hero .circle {
