@@ -55,7 +55,7 @@
           </div>
           <div class='partner-image' style='background-image:url(<?php echo $image?>)'></div>
         </div>
-        <div style="max-width:400px;mmargin:0 auto;"><?php echo $block['text_profi']?></div>
+        <div style="max-width:400px;margin:0 auto;"><?php echo $block['text_profi']?></div>
     <?php if($block['link']){?>
      <a class='link' href='<?php echo $block['link_profi']['url']?>'><?php echo $block['link_profi']['title']?></a>
     <?php }?>
@@ -63,7 +63,7 @@
 	  </div>
 </div>
 <div class='joblist-container ausbild'>
-      <div class='row kontakt' style="padding:0:margin:0">
+      <div class='row kontakt' style="padding:0;margin:0">
         <div>
           <h2><?php echo $block['headline_azubi']?></h2>
           <div class="job-container-test">
