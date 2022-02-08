@@ -135,3 +135,10 @@
 
         })
 </script>
+
+<style>
+  .joblist-container  * {
+    transform:none!important;
+    opacity:1!important;
+  }
+</style>
