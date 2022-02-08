@@ -40,10 +40,7 @@
                 <?php }?>
         <?php }?> 
 	  </div>
-    <div><?php echo $block['text_profi']?></div>
-    <?php if($block['link']){?>
-     <a class='link' href='<?php echo $block['link_profi']['url']?>'><?php echo $block['link_profi']['title']?></a>
-    <?php }?>
+    
   </div>
       <div>
         <div class='partner-box'>
@@ -58,6 +55,10 @@
           </div>
           <div class='partner-image' style='background-image:url(<?php echo $image?>)'></div>
         </div>
+        <div><?php echo $block['text_profi']?></div>
+    <?php if($block['link']){?>
+     <a class='link' href='<?php echo $block['link_profi']['url']?>'><?php echo $block['link_profi']['title']?></a>
+    <?php }?>
       </div>
 	  </div>
 </div>
@@ -80,11 +81,7 @@
 	  </div>
 
 
-          <div><?php echo $block['text_azubi']?></div>
-          <?php if($block['link']){?>
-          <a class='link' href='<?php echo $block['link_azubi']['url']?>'><?php echo $block['link_azubi']['title']?></a>
-          <?php }?>
-        </div>
+     
     <div>
   <div class='partner-box'>
       <div class='partner-info'>
@@ -98,6 +95,11 @@
       </div>
       <div class='partner-image' style='background-image:url(<?php echo $image2;?>)'></div>
     </div>
+    <div><?php echo $block['text_azubi']?></div>
+          <?php if($block['link']){?>
+          <a class='link' href='<?php echo $block['link_azubi']['url']?>'><?php echo $block['link_azubi']['title']?></a>
+          <?php }?>
+        </div>
   </div>
   </div>
   
