@@ -8,25 +8,26 @@ $level=get_field_object('field_60bf4b7462232');
 
 
 <div class='row joblist'>
-      <h1>Karriere</h1>
-      <div class='joblist-filter'>
-              <div class='filter-button selected' id='profi-button'>Profi-Jobs im Richtershof</div>
-              <div class='filter-button' id='ausbild-button'>Ausbildung im Richtershof</div>
-      </div>
-      <div class='joblist-container profi'>
-      <?php 
-$name=get_field( 'name', $block['partner_profi']->ID );
-$image=get_field( 'image', $block['partner_profi']->ID );
-$position=get_field( 'position', $block['partner_profi']->ID );
-$phone=get_field( 'phone', $block['partner_profi']->ID );
-$email=get_field( 'email', $block['partner_profi']->ID );
-$name2=get_field( 'name', $block['partner_azubi']->ID );
-$image2=get_field( 'image', $block['partner_azubi']->ID );
-$position2=get_field( 'position', $block['partner_azubi']->ID );
-$phone2=get_field( 'phone', $block['partner_azubi']->ID );
-$email2=get_field( 'email', $block['partner_azubi']->ID );
-?>
-   
+    <h1>Karriere</h1>
+    <div class='joblist-filter'>
+            <div class='filter-button selected' id='profi-button'>Profi-Jobs im Richtershof</div>
+            <div class='filter-button' id='ausbild-button'>Ausbildung im Richtershof</div>
+    </div>
+    </div>
+
+    <div class='joblist-container profi'>
+    <?php 
+      $name=get_field( 'name', $block['partner_profi']->ID );
+      $image=get_field( 'image', $block['partner_profi']->ID );
+      $position=get_field( 'position', $block['partner_profi']->ID );
+      $phone=get_field( 'phone', $block['partner_profi']->ID );
+      $email=get_field( 'email', $block['partner_profi']->ID );
+      $name2=get_field( 'name', $block['partner_azubi']->ID );
+      $image2=get_field( 'image', $block['partner_azubi']->ID );
+      $position2=get_field( 'position', $block['partner_azubi']->ID );
+      $phone2=get_field( 'phone', $block['partner_azubi']->ID );
+      $email2=get_field( 'email', $block['partner_azubi']->ID );
+    ?>
 
 <div class='row kontakt' style="padding:0">
   <div>
@@ -96,6 +97,12 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
   
       </div>
 </div>
+
+
+
+
+
+
 
 <script>
         jQuery(document).ready(function ($) {
