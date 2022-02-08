@@ -81,7 +81,7 @@
         justify-content:center;
         align-items:center;
         left:25px;
-        bottom:0;
+        bottom:25px;
     }
 
     @media(max-width:800px) {
