@@ -50,9 +50,7 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
     <?php }?>
   </div>
     <div>
-
-	    </div>
-  <div class='partner-box'>
+    <div class='partner-box'>
       <div class='partner-info'>
         <div class='partner-title'>IHR ANSPRECHPARTNER</div>
         <div class='partner-name'><?php echo $name?></div>
@@ -65,6 +63,8 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
       <div class='partner-image' style='background-image:url(<?php echo $image?>)'></div>
     </div>
   </div>
+	    </div>
+
   
 </div>
       
