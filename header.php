@@ -98,6 +98,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <div class='button-group'> 
      <div class='whr-button' id='find-room'>ZIMMER FINDEN</div>
-     <a href="/kontakt" class='whr-button' id='table-booking'>TISCH RESERVIEREN</a>
   </div>
 </div>
