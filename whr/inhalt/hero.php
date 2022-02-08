@@ -85,9 +85,7 @@
     }
 
     @media(max-width:800px) {
-        .hero-aktion {
-                display:none;
-        }
+      
     }
 </style>
 <script>
