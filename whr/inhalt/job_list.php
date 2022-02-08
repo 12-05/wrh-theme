@@ -24,7 +24,7 @@
             <div class='filter-button' id='ausbild-button'>Ausbildung im Richtershof</div>
     </div>
 <div class='joblist-container profi'> 
-  <div class='row' style="padding:0">
+  <div class='row kontakt' style="padding:0">
   <div>
     <h2><?php echo $block['headline_profi']?></h2>
 	  <div class="job-container-test">
