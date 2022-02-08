@@ -23,7 +23,6 @@
             <div class='filter-button selected' id='profi-button'>Profi-Jobs im Richtershof</div>
             <div class='filter-button' id='ausbild-button'>Ausbildung im Richtershof</div>
     </div>
-</div>
 <div class='joblist-container profi'> 
   <div class='row' style="padding:0">
   <div>
@@ -106,6 +105,7 @@
 </div>
 
 
+</div>
 
 
 
