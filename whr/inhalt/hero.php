@@ -84,9 +84,6 @@
         bottom:25px;
     }
 
-    @media(max-width:800px) {
-      
-    }
 </style>
 <script>
 jQuery(document).ready(function ($) {
