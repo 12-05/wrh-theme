@@ -71,20 +71,17 @@
     }
 
     .hero-aktion {
-        background-color: #a8925e;
         color: #FFF;
-        height:200px;
-        width:200px;
-        border-radius:50%;
+        height:145px;
+        width:145px;
         position:absolute;
         z-index:99;
         text-align:center;
         display:flex;
         justify-content:center;
         align-items:center;
-        left:10vw;
-        bottom:15vh;
-        font-size:12px;
+        left:25px;
+        bottom:0;
     }
 
     @media(max-width:800px) {
