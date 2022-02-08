@@ -69,6 +69,29 @@
     .hero .circle * {
         margin:0;
     }
+
+    .hero-aktion {
+        background-color: #a8925e;
+        color: #FFF;
+        height:200px;
+        width:200px;
+        border-radius:50%;
+        position:absolute;
+        z-index:99;
+        text-align:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        left:10vw;
+        bottom:15vh;
+        font-size:12px;
+    }
+
+    @media(max-width:800px) {
+        .hero-aktion {
+                display:none;
+        }
+    }
 </style>
 <script>
 jQuery(document).ready(function ($) {
