@@ -95,7 +95,7 @@
       </div>
       <div class='partner-image' style='background-image:url(<?php echo $image2;?>)'></div>
     </div>
-    <div style="max-width:400px;margin:0 auto"><?php echo $block['text_azubi']?></div>
+    <div style="max-width:400px;margin:0 auto"><div><?php echo $block['text_azubi']?></div>
           <?php if($block['link']){?>
           <a class='link' href='<?php echo $block['link_azubi']['url']?>'><?php echo $block['link_azubi']['title']?></a>
           <?php }?>
