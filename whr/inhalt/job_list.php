@@ -43,6 +43,9 @@
     
   </div>
       <div>
+      <div style="max-width:400px;margin:0 auto;" class="logos">
+          <?php echo $block['logos'];?>
+        </div>
         <div class='partner-box'>
           <div class='partner-info'>
             <div class='partner-title'>IHR ANSPRECHPARTNER</div>
@@ -68,7 +71,7 @@
           <h2><?php echo $block['headline_azubi']?></h2>
           <div class="job-container-test">
 		   <?php foreach($jobs as $job){?>
-                <?php if(get_field('job_level',$job)=='ausbildung'){
+                <?php if(get_field('job_level',$job)=='profi'){
                   $start = get_field('ab_sofort', $job) ? "Ab sofort, oder nach Vereinbarung":get_field('start', $job);?>
 
                         <a href='<?php echo the_permalink($job->ID)?>' class='job-container'>
@@ -83,6 +86,9 @@
 
      
     <div>
+    <div style="max-width:400px;margin:0 auto;" class="logos">
+          <?php echo $block['logos'];?>
+        </div>
   <div class='partner-box'>
       <div class='partner-info'>
         <div class='partner-title'>IHR ANSPRECHPARTNER</div>
