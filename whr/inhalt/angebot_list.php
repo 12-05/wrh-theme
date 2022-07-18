@@ -2,9 +2,15 @@
 $angebots =$block['angebot'];
 $filters=get_field_object('field_60b0a67bba69f');
 $filter_check=[];
-foreach($angebots as $an){
-        foreach(get_field('kategorie',$an) as $kat){$filter_check[]=$kat;}
+if($angebots) {
+	foreach($angebots as $an){
+		if(get_field('kategorie', $an)) {
+			        foreach(get_field('kategorie',$an) as $kat){$filter_check[]=$kat;}
+
+		}
 }
+}
+
 ?>
 
 <div class='row angebot-list'>
