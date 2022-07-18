@@ -45,7 +45,7 @@ if($angebots) {
                    <?php } }?>
            </div>
 	    <?php if (get_field('bedingungen',$angebot)){?>
-           <div class='bedingungen'><?php echo get_field('bedingungen',$angebot); ?></div>
+           <div style="padding:1rem" class='bedingungen'><?php echo get_field('bedingungen',$angebot); ?></div>
            <?php }?>
            <?php if (get_field('link',$angebot)){?>
            <div class='more'><?php echo get_field('link',$angebot)['title']?></div>
