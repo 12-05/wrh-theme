@@ -32,6 +32,15 @@
 
 		<!-- analytics -->
 	
+<noscript>
+
+<img height="1" width="1" 
+
+src="https://www.facebook.com/tr?id=1446580952471331&ev=PageView
+
+&noscript=1"/>
+
+</noscript>
 		<div id="scrollUp"  class="scroll-up">
 
 		</div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVQVMVT"
