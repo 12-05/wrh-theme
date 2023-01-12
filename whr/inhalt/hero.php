@@ -3,15 +3,20 @@
     <div class="content">
         <div class="headline"><?php echo $block['headline'];?></div>
         <div class="text"><?php echo $block['subline'];?></div>
-       
-    </div>
-    <?php if($block['circle']['circle_aktiv']) {?>
-        <a href="<?php echo $block['circle']['circle_link']['url'];?>" target="<?php echo $block['circle']['circle_link']['target'];?>" class="circle">
+        <?php if($block['circle']['circle_aktiv']) {?>
+        <a href="<?php echo $block['circle']['circle_link']['url'];?>" target="<?php echo $block['circle']['circle_link']['target'];?>" class="circle <?php echo $block['circle']['circle_type'];?> <?php echo $block['circle']['circle_position'];?>" style="background-color:<?php echo $block['circle']['circle_color'];?>">
+        <?php if($block['circle']['circle_type']==="star") {?>
+            <div class="star-inner">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.201 29.676"><polygon points="15.602,0 19.325,11.279 31.2,11.332 21.624,18.36 25.243,29.676 15.602,22.738 5.96,29.676 9.577,18.36 0,11.332 11.878,11.279" fill="<?php echo $block['circle']['circle_color'];?>" /></svg>
+            </div>
+        <?php } ?>
         <div class="inner">
             <?php echo $block['circle']['circle_content'];?>
     </div>
         </a>
     <?php } ?> 
+    </div>
+ 
     <?php if($block['video']){?>
        <video autoplay loop muted playsinline src="<?php echo $block['video'];?>">
        </video>
@@ -37,57 +42,20 @@
         <?php } ?>
 </div>
 <style>
-    .hero .circle {
-        background-color: #a8925e;
-        color: #FFF;
-        height:200px;
-        width:200px;
-        border-radius:50%;
-        position:absolute;
-        z-index:99;
-        text-align:center;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        left:10vw;
-        bottom:15vh;
-        transform:rotate(-15deg);
-        font-size:12px;
-    }
-    @media(max-width:800px) {
-        .hero .circle {
-            border-radius:0px;
-            transform:none;
-            bottom:0;
-            height:auto;
-            padding:1rem 1rem;
-        }
-    }
-    .hero .circle:hover {
-        background: #383838;
-    }
-    .hero .circle * {
-        margin:0;
-    }
-
-    .hero-aktion {
-        color: #FFF;
-        height:145px;
-        width:145px;
-        position:absolute;
-        z-index:99;
-        text-align:center;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        left:25px;
-        bottom:25px;
-    }
+ 
 
 </style>
 <script>
 jQuery(document).ready(function ($) {
-        ScrollReveal().reveal(".hero .content", {
+        ScrollReveal().reveal(".hero .headline", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+                reset: true,
+                duration:900
+	});
+
+    ScrollReveal().reveal(".hero .text", {
 		delay: 200,
 		origin: "bottom",
 		distance: "20px",

@@ -438,6 +438,65 @@ h3 {
 	}
 }
 
+.hero .circle {
+	background-color: #a8925e;
+	color: #fff;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	z-index: 99;
+	position: absolute;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 10vw;
+	bottom: 15vh;
+	transform: rotate(-15deg);
+	font-size: 12px;
+	&.centre {
+		position: static;
+		transform: rotate(0deg);
+		margin: 0 auto;
+		margin-top: 2rem;
+	}
+	&.down_right {
+		left: auto;
+		right: 10vw;
+		bottom: 15vh;
+		transform: none !important;
+	}
+}
+@media (max-width: 800px) {
+	.hero .circle {
+		border-radius: 0px;
+		transform: none;
+		bottom: 0;
+		height: auto;
+		padding: 1rem 1rem;
+	}
+}
+.hero .circle:hover {
+	background: #383838;
+}
+.hero .circle * {
+	margin: 0;
+}
+
+.hero-aktion {
+	color: #fff;
+	height: 145px;
+	width: 145px;
+	position: absolute;
+	z-index: 99;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 25px;
+	bottom: 25px;
+}
+
 .hero {
 	height: 100vh;
 	width: 100vw;
@@ -451,6 +510,64 @@ h3 {
 	&:after {
 		@include image-darker();
 		z-index: 2;
+	}
+	.circle {
+		&.square {
+			height: auto;
+			padding: 1rem;
+			border-radius: 0px;
+		}
+		&.star {
+			background: transparent !important;
+		}
+		.inner {
+			position: relative;
+			z-index: 99;
+		}
+		.star-inner {
+			background: no-repeat
+				url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMS4yMDEgMjkuNjc2Ij48cG9seWdvbiBwb2ludHM9IjE1LjYwMiwwIDE5LjMyNSwxMS4yNzkgMzEuMiwxMS4zMzIgMjEuNjI0LDE4LjM2IDI1LjI0MywyOS42NzYgMTUuNjAyLDIyLjczOCA1Ljk2LDI5LjY3NiA5LjU3NywxOC4zNiAwLDExLjMzMiAxMS44NzgsMTEuMjc5IiBmaWxsPSIjMDA5OTAwIiAvPjwvc3ZnPg==");
+			z-index: 0;
+
+			position: absolute;
+
+			width: 100%;
+			height: 100%;
+
+			margin-left: 0.9em;
+			margin-right: 0.9em;
+			margin-bottom: 1.2em;
+
+			border-right: 30% solid transparent;
+			border-bottom: 70% solid #fc0;
+			border-left: 30% solid transparent;
+
+			/* Controlls the size of the stars. */
+			font-size: 24px;
+
+			&:before,
+			&:after {
+				content: "";
+
+				display: block;
+				width: 0;
+				height: 0;
+
+				position: absolute;
+				top: 0.6em;
+				left: -1em;
+
+				border-right: 100% solid transparent;
+				border-bottom: 70% solid #fc0;
+				border-left: 1em solid transparent;
+
+				transform: rotate(-35deg);
+			}
+
+			&:after {
+				transform: rotate(35deg);
+			}
+		}
 	}
 	video {
 		position: absolute;
@@ -473,7 +590,7 @@ h3 {
 		z-index: 3;
 	}
 	.content {
-		position: relative;
+		position: static;
 		color: white;
 		text-align: center;
 		z-index: 3;
