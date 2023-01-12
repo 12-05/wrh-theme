@@ -5,7 +5,6 @@ $partners =$block['list']
 <div class='kontakt-list'>
 <?php foreach($partners as $partner){?>
         <div class='kontakt-box'>
-                <div class='kontakt-img' style='background-image:url(<?php echo get_field('image',$partner)?>)'></div>
                 <div class='kontakt-content'>
                         <div class='kontakt-name'><?php echo get_field('name',$partner)?></div>
                         <div class='kontakt-position'><?php echo get_field('position',$partner)?></div>
