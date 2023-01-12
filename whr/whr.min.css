@@ -45,7 +45,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .hero .circle.square{height:auto;padding:1rem;border-radius:0}
 .hero .circle.star{background:transparent !important}
 .hero .circle .inner{position:relative;z-index:99}
-.hero .circle .star-inner{background:no-repeat url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMS4yMDEgMjkuNjc2Ij48cG9seWdvbiBwb2ludHM9IjE1LjYwMiwwIDE5LjMyNSwxMS4yNzkgMzEuMiwxMS4zMzIgMjEuNjI0LDE4LjM2IDI1LjI0MywyOS42NzYgMTUuNjAyLDIyLjczOCA1Ljk2LDI5LjY3NiA5LjU3NywxOC4zNiAwLDExLjMzMiAxMS44NzgsMTEuMjc5IiBmaWxsPSIjMDA5OTAwIiAvPjwvc3ZnPg==");z-index:0;position:absolute;width:100%;height:100%;margin-left:.9em;margin-right:.9em;margin-bottom:1.2em;border-right:30% solid transparent;border-bottom:70% solid #fc0;border-left:30% solid transparent;font-size:24px}
+.hero .circle .star-inner{z-index:0;position:absolute;width:100%;height:100%;margin-left:.9em;margin-right:.9em;margin-bottom:1.2em;border-right:30% solid transparent;border-bottom:70% solid #fc0;border-left:30% solid transparent;font-size:24px}
 .hero .circle .star-inner:before,.hero .circle .star-inner:after{content:"";display:block;width:0;height:0;position:absolute;top:.6em;left:-1em;border-right:100% solid transparent;border-bottom:70% solid #fc0;border-left:1em solid transparent;-webkit-transform:rotate(-35deg);transform:rotate(-35deg)}
 .hero .circle .star-inner:after{-webkit-transform:rotate(35deg);transform:rotate(35deg)}
 .hero video{position:absolute;min-width:100%;min-height:100%;overflow:hidden;z-index:1;background:#000}
