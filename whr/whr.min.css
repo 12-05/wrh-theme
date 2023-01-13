@@ -35,6 +35,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 #menu #header-burger-close{position:absolute;top:32px;right:48px;background-image:url("../assets/img/menu-close.svg");height:48px;width:48px;background-position:center;background-repeat:no-repeat;background-size:35%;background-color:transparent;background-color:white;border-radius:50%;cursor:pointer}
 #menu.open{-webkit-transform:translateX(0);transform:translateX(0);-webkit-transition:all .3s ease-in;transition:all .3s ease-in}
 .hero .circle{background-color:#a8925e;color:#fff;height:200px;width:200px;border-radius:50%;z-index:99;position:absolute;text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;left:10vw;bottom:15vh;-webkit-transform:rotate(-15deg);transform:rotate(-15deg);font-size:12px}
+.hero .circle img{max-width:100%;height:auto}
 .hero .circle.centre{position:static;-webkit-transform:rotate(0);transform:rotate(0);margin:0 auto;margin-top:2rem}
 .hero .circle.down_right{left:auto;right:10vw;bottom:15vh;-webkit-transform:none !important;transform:none !important}
 .hero .circle:hover{background:#383838}

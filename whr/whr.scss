@@ -454,6 +454,10 @@ h3 {
 	bottom: 15vh;
 	transform: rotate(-15deg);
 	font-size: 12px;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
 	&.centre {
 		position: static;
 		transform: rotate(0deg);
