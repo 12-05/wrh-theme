@@ -34,7 +34,7 @@ header("Access-Control-Allow-Headers: *");
             ob_start();
             include 'whr-anfrage-mail.php';
             $content = ob_get_clean();
-            $to = 'beauty@weinromantikhotel.de';
+            $to = 'spa@weinromantikhotel.de';
      
 
             $subject = 'Neue Behandlunganfrage - Weinromantikhotel';
