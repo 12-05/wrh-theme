@@ -132,7 +132,7 @@ h3 { font-family: "Noto Serif", serif; font-size: 32px; font-weight: normal; }
 
 .hero .circle * { margin: 0; }
 
-.hero-aktion { color: #fff; height: 145px; width: 145px; position: absolute; z-index: 99; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; left: 25px; bottom: 25px; }
+.hero-aktion { color: #fff; height: 200px; width: 200px; position: absolute; z-index: 99; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; left: 10vw; bottom: 15vh; }
 
 .hero-aktion img { max-width: 100%; max-height: 100%; height: auto; width: auto; }
 
