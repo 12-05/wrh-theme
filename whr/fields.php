@@ -843,7 +843,6 @@
                                                             'id' => '',
                                                         ),
                                                         'message' => '',
-                                                        'default_value' => 0,
                                                         'ui' => 0,
                                                         'ui_on_text' => '',
                                                         'ui_off_text' => '',
