@@ -40,14 +40,7 @@
 		<div id="scrollUp"  class="scroll-up">
 
 		</div>
-		<script>
-(function(h,o,t,e,l,g,s){h[l]=h[l]||function(){
-    (h[l].q=h[l].q||[]).push(arguments)},h[l].l=1*new Date();g=o.createElement(t),
-    s=o.getElementsByTagName(t)[0];g.async=1;g.src=e;s.parentNode.insertBefore(g,s)
-})(window,document,'script','https://api.greensign.de/widget/greensign.js','gs');
-
-gs("00407",{ position : "center-left" });
-</script>
+	
 	</body>
 
 </html>
