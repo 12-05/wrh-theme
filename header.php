@@ -63,7 +63,7 @@ gs("GS00407",{ position : "center-left" });
 						</div>
 						<div class='icon-bar-big'>
 						<?php if($logo) {?>
-							  <a href='<?php echo get_field('hotellink','option')['url']?>'><img src='<?php echo $logo?>'/></a>
+							  <a target='_blank' href='<?php echo get_field('hotellink','option')['url']?>'><img src='<?php echo $logo?>'/></a>
 						  <?php } ?>
 						</div>
 					</div>
