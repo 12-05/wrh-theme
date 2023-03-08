@@ -35,13 +35,13 @@
 }
 
 		</style>
-			<script>
+		<script>
 (function(h,o,t,e,l,g,s){h[l]=h[l]||function(){
     (h[l].q=h[l].q||[]).push(arguments)},h[l].l=1*new Date();g=o.createElement(t),
     s=o.getElementsByTagName(t)[0];g.async=1;g.src=e;s.parentNode.insertBefore(g,s)
 })(window,document,'script','https://api.greensign.de/widget/greensign.js','gs');
 
-gs("00407",{ position : "center-left" });
+gs("GS00407",{ position : "center-left" });
 </script>
 		<?php if(is_front_page()) {?>
 			<iframe style="z-index:999999999;position:fixed;bottom:100px;right:0;border:0;width:300px;height:400px;" src="https://interfaces.cbooking.de/RateMonitor/index.html?client=9e5646ea-6ef6-489b-8c38-6ee03c9eca92&open=1&lang=de&showButton=1&update=1&buttonBgColor=a8925e&buttonColor=ffffff&headerBgColor=ffffff&headerColor=7f7f7f&contentColor=7f7f7f"></iframe>
