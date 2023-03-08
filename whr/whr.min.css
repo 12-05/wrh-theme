@@ -22,7 +22,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .header.top .icon-bar{padding:28px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 .header.top .icon-bar .icon-bar-small{display:block}
 .header.top .icon-bar .icon-bar-small img{height:24px;margin-right:12px}
-.header.top .icon-bar .icon-bar-big img{height:148px;margin-top:-48px}
+.header.top .icon-bar .icon-bar-big img{height:200px;margin-top:-65px}
 .header.top .header-menu-bar{background-color:transparent}
 .header.top .header-menu-bar a{color:white}
 .header.top .country-selector.weglot-dropdown .wgcurrent a,.header.top .country-selector.weglot-dropdown .wgcurrent span{color:white}
@@ -118,7 +118,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .halfblock.room-block .room-slicker .slick-dots li{margin-right:16px;list-style:none}
 .halfblock.room-block .room-slicker .slick-dots li.slick-active button{background-color:#a8925e}
 .halfblock.room-block .room-slicker .slick-dots li button{height:6px;width:64px;border-radius:3px;border:0;background-color:#f2f2f2;content:"";color:transparent}
-.content-group{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}
+.content-group{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;padding:64px}
 .content-group p{font-family:"Work Sans";font-size:20px;line-height:36px;max-width:1000px;margin:16px auto}
 .content-group .content-group-items{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:32px;margin-top:32px}
 .content-group .content-group-items .item:hover{-webkit-transition:all .3s ease;transition:all .3s ease;-webkit-transform:scale(1.1);transform:scale(1.1)}

@@ -227,8 +227,8 @@ h3 {
 			}
 			.icon-bar-big{
 				img {
-					height: 148px;
-					margin-top: -48px;
+					height: 200px;
+					margin-top: -65px;
 				}
 			}
 			
@@ -959,6 +959,7 @@ h3 {
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	padding: 64px;
 	p {
 		@include font-text-big();
 		max-width: 1000px;
