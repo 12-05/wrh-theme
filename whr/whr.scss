@@ -216,11 +216,22 @@ h3 {
 		}
 		.icon-bar {
 			padding: 28px;
-			display: block;
-			img {
-				height: 24px;
-				margin-right: 12px;
+			display: flex;
+            flex-direction: row;
+			.icon-bar-small{
+				display: block;
+				img {
+					height: 24px;
+					margin-right: 12px;
+				}
 			}
+			.icon-bar-big{
+				img {
+					height: 52px;
+					margin-left: 12px;
+				}
+			}
+			
 		}
 		.header-menu-bar {
 			background-color: transparent;

@@ -50,15 +50,22 @@ gs("GS00407",{ position : "center-left" });
 	
 		<!-- wrapper -->
 		<div class="wrapper">
-      <?php $icons=get_field('iconsbar','option')?>
+      <?php $icons=get_field('iconsbar','option');$logo=get_field('hotellogo','option')?>
 			<!-- header -->
 			<header id='header' class="header clear top" role="banner">
           <div class='icon-bar'>
-						<?php if($icons) {
-                            foreach ($icons as $icon) {?>
-							<a href='<?php echo $icon['link']['url']?>'><img src='<?php echo $icon['icon']?>'/></a>
-						<?php }
+			            <div class='icon-bar-small'>
+						  <?php if($icons) {
+                              foreach ($icons as $icon) {?>
+							  <a href='<?php echo $icon['link']['url']?>'><img src='<?php echo $icon['icon']?>'/></a>
+						  <?php }
                         }?>
+						</div>
+						<div class='icon-bar-big'>
+						<?php if($logo) {?>
+							  <a href='<?php echo get_field('hotellink')['url']?>'><img src='<?php echo $logo?>'/></a>
+						  <?php } ?>
+						</div>
 					</div>
 					<a href="/"  class='icon'>
                           <img src='<?php echo the_field('logo_small','option')?>'/>
