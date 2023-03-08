@@ -40,8 +40,7 @@
 		<div id="scrollUp"  class="scroll-up">
 
 		</div>
-	</body>
-	<script>
+		<script>
 (function(h,o,t,e,l,g,s){h[l]=h[l]||function(){
     (h[l].q=h[l].q||[]).push(arguments)},h[l].l=1*new Date();g=o.createElement(t),
     s=o.getElementsByTagName(t)[0];g.async=1;g.src=e;s.parentNode.insertBefore(g,s)
@@ -49,4 +48,6 @@
 
 gs("00407",{ position : "center-left" });
 </script>
+	</body>
+
 </html>
