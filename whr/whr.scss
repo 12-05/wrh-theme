@@ -217,21 +217,24 @@ h3 {
 		.icon-bar {
 			padding: 28px;
 			display: flex;
-            flex-direction: row;
-			.icon-bar-small{
+			flex-direction: row;
+			.icon-bar-small {
 				display: block;
 				img {
 					height: 24px;
 					margin-right: 12px;
 				}
 			}
-			.icon-bar-big{
+			.icon-bar-big {
 				img {
 					height: 200px;
 					margin-top: -65px;
 				}
+				@media (max-width: 1080px) {
+					height: 140px;
+					margin-top: -48px;
+				}
 			}
-			
 		}
 		.header-menu-bar {
 			background-color: transparent;
@@ -510,11 +513,19 @@ h3 {
 	align-items: center;
 	left: 10vw;
 	bottom: 15vh;
+	@media (max-width: 1080px) {
+		width: 165px;
+		left: 0vw;
+		bottom: 10vh;
+	}
 	img {
 		max-width: 100%;
 		max-height: 100%;
 		height: auto;
 		width: auto;
+		@media (max-width: 1080px) {
+			max-width: 35vw;
+		}
 	}
 }
 
@@ -661,7 +672,8 @@ h3 {
 			display: none;
 		}
 		.logo {
-			width: 70%;
+			width: 60%;
+			margin-top: 80px;
 		}
 	}
 	.baum-siegel {
@@ -674,6 +686,10 @@ h3 {
 		right: 1%;
 		margin-bottom: 25px;
 		bottom: 0;
+		@media (max-width: 1080px) {
+			margin-bottom: 54px;
+			bottom: 10vh;
+		}
 	}
 }
 
