@@ -184,7 +184,6 @@ h3 {
 		box-sizing: border-box;
 		padding: 12px 24px;
 		margin-right: 16px;
-		width: 25%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -192,6 +191,9 @@ h3 {
 		color: $black;
 
 		a {
+			display: inline-block;
+			padding-right: 1rem;
+			padding-left: 1rem;
 			color: $black;
 		}
 	}

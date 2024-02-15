@@ -13,8 +13,8 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .whr-button{display:block;padding:8px 20px;margin:16px 0;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;color:white;background-color:#a8925e;cursor:pointer;font-family:"Work Sans";font-size:12px}
 .header{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;z-index:9;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;position:fixed;top:0;left:0}
 .header .icon-bar{display:none}
-.header .header-menu-bar{height:72px;-webkit-box-sizing:border-box;box-sizing:border-box;padding:12px 24px;margin-right:16px;width:25%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:white;color:#383838}
-.header .header-menu-bar a{color:#383838}
+.header .header-menu-bar{height:72px;-webkit-box-sizing:border-box;box-sizing:border-box;padding:12px 24px;margin-right:16px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:white;color:#383838}
+.header .header-menu-bar a{display:inline-block;padding-right:1rem;padding-left:1rem;color:#383838}
 .header .icon{display:block;margin-left:48px;background-position:center;background-repeat:no-repeat;background-size:contain;cursor:pointer}
 .header .icon img{height:72px;-o-object-fit:cover;object-fit:cover}
 .header.top{position:absolute;top:0;left:0}
