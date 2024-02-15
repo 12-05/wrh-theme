@@ -76,7 +76,7 @@ $logo = get_field('hotellogo', 'option')?>
 						<a href='/zimmer'>ZIMMER</a>
 						<a href='/tagen-und-feiern'>FEIERN & TAGEN</a>
 						<a href='<?php echo get_field('buchen', 'option') ?>'>BUCHEN</a>
-						<div id="weglot_here"></div>
+						<div style="margin-right:3rem" id="weglot_here"></div>
 						<div id='header-burger'></div>
 					</div>
 
