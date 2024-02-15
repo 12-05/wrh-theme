@@ -132,6 +132,9 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .quote .content{font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px;max-width:900px;margin:36px auto}
 .quote .author{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal}
 .fulltext{padding-left:320px}
+.fulltext table{width:100%;border-collapse:collapse}
+.fulltext table tr td{padding:16px 0;border-bottom:1px solid rgba(0,0,0,0.1)}
+.fulltext table tr td:first-child{width:200px}
 .fulltext h1{margin-bottom:48px}
 .fulltext p{font-family:"Work Sans";font-size:20px;line-height:36px}
 .fulltext a{font-family:"Work Sans";font-size:20px;line-height:36px;color:#a8925e}

@@ -1042,6 +1042,19 @@ h3 {
 }
 
 .fulltext {
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		tr {
+			td {
+				padding: 16px 0;
+				border-bottom: 1px solid rgba(#000, 0.1);
+				&:first-child {
+					width: 200px;
+				}
+			}
+		}
+	}
 	padding-left: 320px;
 	@media (max-width: 1080px) {
 		padding-left: 16px;
