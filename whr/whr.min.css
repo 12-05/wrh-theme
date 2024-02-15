@@ -156,6 +156,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .footer .footer-policy-container .footer-policy a{color:rgba(255,255,255,0.5) !important}
 .footer .footer-policy-container .footer-policy a:hover{text-decoration:underline}
 .full-image{background-position:center;background-repeat:no-repeat;background-size:cover;display:block;width:100%}
+.aligncenter{display:block;margin:0 auto}
 .newsletter{background-color:#a8925e;text-align:center;color:white;text-align:left}
 .newsletter .newsletter-box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:right;-ms-flex-pack:right;justify-content:right;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;max-width:600px;margin:0 auto}
 .newsletter #email{display:block;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:"Work Sans";font-size:20px;line-height:36px;width:100%;background-color:transparent;padding:16px 24px;border:0;border-bottom:3px solid white;color:white;font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px}
