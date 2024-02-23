@@ -109,6 +109,9 @@ function register_my_menu()
 
 // render weglot current language as shortcode
 
-add_shortcode('lang', function () {
-    return weglot_get_current_language();
+add_shortcode('tagungskonfigurator', function () {
+    return '<script
+    id="synoptive-embed"
+    src="https://cdn.evntmchn.com/meeting/embed/30251/Weinromantikhotel-Richtershof-Muelheim-an-der-Mosel/Weinromantikhotel-Richtershof-Muelheim-an-der-Mosel-' . weglot_get_current_language() . '.embed.js"
+    ></script>';
 });
