@@ -113,5 +113,17 @@ add_shortcode('tagungskonfigurator', function () {
     return '<script
     id="synoptive-embed"
     src="https://cdn.evntmchn.com/meeting/embed/30251/Weinromantikhotel-Richtershof-Muelheim-an-der-Mosel/Weinromantikhotel-Richtershof-Muelheim-an-der-Mosel-' . weglot_get_current_language() . '.embed.js"
-    ></script>';
+    ></script>
+    <style>
+    .fulltext {
+        transform:none!important;}
+
+        .booking-bar {
+            display:none!important}
+            .fulltext {
+            padding-top:2rem;
+            }
+    </style>
+
+    ';
 });
