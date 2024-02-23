@@ -110,9 +110,13 @@ function register_my_menu()
 // render weglot current language as shortcode
 
 add_shortcode('tagungskonfigurator', function () {
+    $lang = weglot_get_current_language();
+    if ($lang === "fr") {
+        $lang = "en";
+    }
     return '<script
     id="synoptive-embed"
-    src="https://cdn.evntmchn.com/meeting/embed/30251/Weinromantikhotel-Richtershof-Muelheim-an-der-Mosel/Weinromantikhotel-Richtershof-Muelheim-an-der-Mosel-' . weglot_get_current_language() . '.embed.js"
+    src="https://cdn.evntmchn.com/meeting/embed/30251/Weinromantikhotel-Richtershof-Muelheim-an-der-Mosel/Weinromantikhotel-Richtershof-Muelheim-an-der-Mosel-' . $lang . '.embed.js"
     ></script>
     <style>
     .fulltext {
