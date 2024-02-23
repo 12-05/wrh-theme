@@ -72,11 +72,11 @@ $logo = get_field('hotellogo', 'option')?>
                           <img src='<?php echo the_field('logo_small', 'option') ?>'/>
 					</a>
 				  <div class='header-menu-bar' >
-				  		<a href='/angebote'>ANGEBOTE</a>
+				  		<a href='https://onepagebooking.com/weinromantikhotel-richtershof/packages?_gl=1*rmmpum*_gcl_au*MTgwMDAxMjA4MC4xNzA0Nzk0MDY0'>ANGEBOTE</a>
 						<a href='/zimmer'>ZIMMER</a>
 						<a href='/tagen-und-feiern'>FEIERN & TAGEN</a>
 						<a href='<?php echo get_field('buchen', 'option') ?>'>BUCHEN</a>
-						<div style="margin-right:3rem" id="weglot_here"></div>
+						<div id="weglot_here"></div>
 						<div id='header-burger'></div>
 					</div>
 

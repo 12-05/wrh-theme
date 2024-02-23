@@ -232,22 +232,22 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .angebot-list .angebot-list-items .item .angebot-list-info .more:after{content:url("../assets/img/right-arrow.svg");margin-left:16px}
 .angebot-list .angebot-list-items .item .angebot-list-info .angebot-list-detail{padding:24px 0;border-bottom:1px solid rgba(0,0,0,0.5)}
 .angebot-list .angebot-list-items .item .angebot-list-info .angebot-list-detail .punkt{font-family:"Work Sans";font-size:20px;line-height:36px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-repeat:no-repeat;background-position:left;background-size:24px 24px;padding-left:32px;font-size:16px}
-.booking-bar{position:fixed;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:800px;height:96px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;background-color:#383838;-webkit-box-sizing:border-box;box-sizing:border-box;padding:24px;z-index:999999999}
-.booking-bar .booking-calendar{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:100%}
-.booking-bar .booking-calendar .start-date-container{margin-right:48px}
-.booking-bar .booking-calendar input:focus{outline:0}
-.booking-bar .booking-calendar input{background-color:transparent;color:transparent;border:0;cursor:pointer;position:absolute;height:100%;width:100%;z-index:99}
-.booking-bar .booking-calendar .label{font-size:12px;color:rgba(255,255,255,0.5)}
-.booking-bar .booking-calendar #start-date,.booking-bar .booking-calendar #end-date{font-family:"Noto Serif",serif;font-size:24px;font-weight:normal;color:white;position:relative;padding-left:16px;margin-top:6px}
-.booking-bar .booking-calendar #start-date:before,.booking-bar .booking-calendar #end-date:before{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);left:0;content:"";width:8px;height:8px;background-image:url(../assets/img/calendar-arrow-white.svg);background-size:contain;background-position:center;background-repeat:no-repeat}
-.booking-bar .booking{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:space-between;-ms-flex-align:space-between;align-items:space-between;-webkit-box-pack:left;-ms-flex-pack:left;justify-content:left}
-.booking-bar .booking .gast{margin-left:8px;font-size:12px;display:-webkit-box;display:-ms-flexbox;display:flex;height:30px;color:rgba(255,255,255,0.5)}
-.booking-bar .booking select{margin-left:4px;position:relative;-webkit-appearance:none;-moz-appearance:none;cursor:pointer;height:32px;background:transparent;border:0;padding-left:16px;font-family:"Noto Serif",serif;font-size:24px;font-weight:normal;color:white;background-image:url(../assets/img/calendar-arrow-white.svg);background-size:25%;background-position:0 50%;background-repeat:no-repeat}
-.booking-bar .button-group{display:-webkit-box;display:-ms-flexbox;display:flex}
-.booking-bar #find-room{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;font-size:16px;-webkit-box-sizing:border-box;box-sizing:border-box;border:1px solid #a8925e;margin:0;padding:12px 20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-right:16px}
-.booking-bar #find-room:before{content:url("../assets/img/search.svg");margin-right:8px}
-.booking-bar #table-booking{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;font-size:16px;background-color:#383838;border:1px solid #a8925e;color:#a8925e;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:12px 20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
-.booking-bar #table-booking:before{content:url("../assets/img/dinner.svg");margin-right:8px}
+.tagungswidget,.booking-bar{position:fixed;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:800px;height:96px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;background-color:#383838;-webkit-box-sizing:border-box;box-sizing:border-box;padding:24px;z-index:999999999}
+.tagungswidget .booking-calendar,.booking-bar .booking-calendar{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:100%}
+.tagungswidget .booking-calendar .start-date-container,.booking-bar .booking-calendar .start-date-container{margin-right:48px}
+.tagungswidget .booking-calendar input:focus,.booking-bar .booking-calendar input:focus{outline:0}
+.tagungswidget .booking-calendar input,.booking-bar .booking-calendar input{background-color:transparent;color:transparent;border:0;cursor:pointer;position:absolute;height:100%;width:100%;z-index:99}
+.tagungswidget .booking-calendar .label,.booking-bar .booking-calendar .label{font-size:12px;color:rgba(255,255,255,0.5)}
+.tagungswidget .booking-calendar #start-date,.tagungswidget .booking-calendar #end-date,.booking-bar .booking-calendar #start-date,.booking-bar .booking-calendar #end-date{font-family:"Noto Serif",serif;font-size:24px;font-weight:normal;color:white;position:relative;padding-left:16px;margin-top:6px}
+.tagungswidget .booking-calendar #start-date:before,.tagungswidget .booking-calendar #end-date:before,.booking-bar .booking-calendar #start-date:before,.booking-bar .booking-calendar #end-date:before{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);left:0;content:"";width:8px;height:8px;background-image:url(../assets/img/calendar-arrow-white.svg);background-size:contain;background-position:center;background-repeat:no-repeat}
+.tagungswidget .booking,.booking-bar .booking{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:space-between;-ms-flex-align:space-between;align-items:space-between;-webkit-box-pack:left;-ms-flex-pack:left;justify-content:left}
+.tagungswidget .booking .gast,.booking-bar .booking .gast{margin-left:8px;font-size:12px;display:-webkit-box;display:-ms-flexbox;display:flex;height:30px;color:rgba(255,255,255,0.5)}
+.tagungswidget .booking select,.booking-bar .booking select{margin-left:4px;position:relative;-webkit-appearance:none;-moz-appearance:none;cursor:pointer;height:32px;background:transparent;border:0;padding-left:16px;font-family:"Noto Serif",serif;font-size:24px;font-weight:normal;color:white;background-image:url(../assets/img/calendar-arrow-white.svg);background-size:25%;background-position:0 50%;background-repeat:no-repeat}
+.tagungswidget .button-group,.booking-bar .button-group{display:-webkit-box;display:-ms-flexbox;display:flex}
+.tagungswidget #find-room,.booking-bar #find-room{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;font-size:16px;-webkit-box-sizing:border-box;box-sizing:border-box;border:1px solid #a8925e;margin:0;padding:12px 20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-right:16px}
+.tagungswidget #find-room:before,.booking-bar #find-room:before{content:url("../assets/img/search.svg");margin-right:8px}
+.tagungswidget #table-booking,.booking-bar #table-booking{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;font-size:16px;background-color:#383838;border:1px solid #a8925e;color:#a8925e;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:12px 20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.tagungswidget #table-booking:before,.booking-bar #table-booking:before{content:url("../assets/img/dinner.svg");margin-right:8px}
 .treatments{padding:64px 196px}
 .treatments .treatments-container{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:24px}
 .treatments .treatments-container .treatment-box{font-family:"Work Sans";font-size:20px;line-height:36px;color:black;padding:32px;border:1px solid black;background-color:#f2f2f2;cursor:pointer;-webkit-transition:all .3s;transition:all .3s;position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;transition:all .3s !important}
@@ -523,8 +523,8 @@ h2{font-size:24px;line-height:32px}
 .halfblock.room-block .block-content .ausstattung-list{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:.5rem}
 .footer .menu{display:block}
 .footer .menu li{display:block}
-.booking-bar .booking-calendar #start-date,.booking-bar .booking-calendar #end-date{font-size:20px}
-.booking-bar .booking select{font-size:20px}
+.tagungswidget .booking-calendar #start-date,.tagungswidget .booking-calendar #end-date,.booking-bar .booking-calendar #start-date,.booking-bar .booking-calendar #end-date{font-size:20px}
+.tagungswidget .booking select,.booking-bar .booking select{font-size:20px}
 .treatments{padding:0}
 .treatments .treatments-container{grid-template-columns:1fr}
 .treatments .treatments-container .treatment-box .title{font-size:20px}
