@@ -32,7 +32,11 @@ if ($angebots) {
   </div>
   <div class='angebot-list-items'>
     <?php if ($angebots) {foreach ($angebots as $angebot) {$punkte = get_field('punkte', $angebot);
-    $permalink = get_field('link', $angebot) ? get_field('link', $angebot)['url'] : get_permalink($angebot->ID);?>
+    $link = get_field('link', $angebot)['url'];
+    if (weglot_get_current_language() == 'en') {
+        $link = str_replace('/de/', '/en', $link);
+    }
+    $permalink = $link ? $link : get_permalink($angebot->ID);?>
       <a target="_blank" class='all item visible <?php foreach (get_field('kategorie', $angebot) as $kat) {echo ' ' . $kat;}?>' href='<?php echo $permalink; ?>'>
         <div class='item-image' >
            <img src='<?php echo get_field('image', $angebot) ?>' />
@@ -51,11 +55,11 @@ if ($angebots) {
            <?php if (get_field('link', $angebot)) {
         $link = get_field('link', $angebot)['url'];
         if (weglot_get_current_language() == 'en') {
-            $link = str_replace('/de/', '/en/', $link);
+            $link = str_replace('/de/', '/en', $link);
         }
 
         ?>
-           <div class='more'><?php echo $link; ?></div>
+           <div class='more'><?php echo get_field('link', $angebot)['title'] ?></div>
            <?php }?>
         </div>
     </a>
