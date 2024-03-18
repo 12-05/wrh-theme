@@ -51,6 +51,10 @@ gs("GS00407",{ position : "center-left" });
 $logo = get_field('hotellogo', 'option')?>
 			<!-- header -->
 			<header id='header' class="header clear top" role="banner">
+			<?php if (is_front_page()) {?>
+			<iframe style="z-index:999999999;position:fixed;bottom:100px;right:0;border:0;width:300px;height:400px;" src="https://interfaces.cbooking.de/RateMonitor/index.html?client=9e5646ea-6ef6-489b-8c38-6ee03c9eca92&open=1&lang=de&showButton=1&update=1&buttonBgColor=a8925e&buttonColor=ffffff&headerBgColor=ffffff&headerColor=7f7f7f&contentColor=7f7f7f"></iframe>
+
+		<?php }?>
           <div class='icon-bar'>
 			            <div class='icon-bar-small'>
 						  <?php if ($icons) {
