@@ -154,13 +154,13 @@ jQuery(document).ready(function ($) {
 	$("#find-room").click(function () {
 		let gast = $("#gast").val();
 		window.open(
-			"https://onepagebooking.com/weinromantikhotel-richtershof?arrival=" +
+			"https://richtershof.direct-reservation.net/api?directQuery=true&websiteID=1675&dateFrom=" +
 				arrival +
-				"&departure=" +
+				"&dateTo=" +
 				departure +
-				"&lang=de&ratetype=bar&adults=" +
+				"&LanguageCode=de&hotelIds=7453&adults=" +
 				gast +
-				"&children=0"
+				"&childrenAges=&searchModules=Accommodation&"
 		);
 	});
 
