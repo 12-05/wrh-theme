@@ -3165,7 +3165,7 @@ if (function_exists('acf_add_local_field_group')):
                 'mime_types' => '',
             ),
             array(
-                'key' => 'field_6093f2e1a6f7c',
+                'key' => 'field_6093f2e1a222226f7c',
                 'label' => 'Logo Big',
                 'name' => 'logo_big',
                 'aria-label' => '',
