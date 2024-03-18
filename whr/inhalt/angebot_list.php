@@ -51,11 +51,11 @@ if ($angebots) {
            <?php if (get_field('link', $angebot)) {
         $link = get_field('link', $angebot)['url'];
         if (weglot_get_current_language() == 'en') {
-            $link = str_replace('/de/', '/en', $link);
+            $link = str_replace('/de/', '/en/', $link);
         }
 
         ?>
-           <div class='more'><?php echo get_field('link', $angebot)['title'] ?></div>
+           <div class='more'><?php echo $link; ?></div>
            <?php }?>
         </div>
     </a>
