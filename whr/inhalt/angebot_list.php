@@ -34,7 +34,7 @@ if ($angebots) {
     <?php if ($angebots) {foreach ($angebots as $angebot) {$punkte = get_field('punkte', $angebot);
     $link = get_field('link', $angebot)['url'];
     if (weglot_get_current_language() == 'en') {
-        $link = str_replace('/de/', '/en', $link);
+        $link = str_replace('/de/', '/en/', $link);
     }
     $permalink = $link ? $link : get_permalink($angebot->ID);?>
       <a target="_blank" class='all item visible <?php foreach (get_field('kategorie', $angebot) as $kat) {echo ' ' . $kat;}?>' href='<?php echo $permalink; ?>'>
