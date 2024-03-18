@@ -16,7 +16,7 @@ function enque_whr_stuff()
     wp_enqueue_style('whr-calendar-style2', get_template_directory_uri() . '/whr/pickmeup.css');
     //wp_enqueue_script( 'whr-reveal', 'https://unpkg.com/scrollreveal', array('jquery'), '1.8.1', false );
     //wp_enqueue_script( 'whr-number', '//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js', array('jquery'), '2.0.6', false );
-    wp_enqueue_script('whr-script', get_template_directory_uri() . '/whr/whr.js', array(), '1.0.0', true);
+    wp_enqueue_script('whr-script', get_template_directory_uri() . '/whr/whr.js', array(), '1.0.1', true);
 }
 add_action('wp_enqueue_scripts', 'enque_whr_stuff');
 
