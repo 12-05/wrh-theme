@@ -158,7 +158,7 @@ jQuery(document).ready(function ($) {
 				arrival +
 				"&dateTo=" +
 				departure +
-				"&LanguageCode=de&hotelIds=7453&adults=" +
+				"&LanguageCode=de&&adults=" +
 				gast +
 				"&childrenAges=&searchModules=Accommodation&"
 		);
