@@ -41,7 +41,7 @@
         rgba(28, 28, 28, 0.4) 45%,
         rgba(28, 28, 28, 0.1) 100%
       )
-      0% 0% no-repeat padding-box"></div><img style="position:absolute;height:100%;width:100%;top:0;object-fit:cover;left:0;transition:all 0.5s ease;z-index:1" src="https://libertas-api.12-05.com/wp-content/uploads/2024/07/badenbaden.png" alt="Baden Baden"><div style="position:relative;z-index:10"><div><div style="font-size:28px;text-transform:uppercase;font-weight:bold;color:white">Baden Baden</div><div style="font-size:16px;color:#B49062">Batschari Palais</div></div></div></a></div></div><style>.footer{display:none!important;} header{display:none!important;}</style></div>
+      0% 0% no-repeat padding-box"></div><img style="position:absolute;height:100%;width:100%;top:0;object-fit:cover;left:0;transition:all 0.5s ease;z-index:1" src="https://libertas-api.12-05.com/wp-content/uploads/2024/07/badenbaden.png" alt="Baden Baden"><div style="position:relative;z-index:10"><div><div style="font-size:28px;text-transform:uppercase;font-weight:bold;color:white">Baden Baden</div><div style="font-size:16px;color:#B49062">Batschari Palais</div></div></div></a></div></div><style></style></div>
 			<footer class="footer" role="contentinfo">
         <div class='footer-info'>
 					<div class='footer-erleben'>
