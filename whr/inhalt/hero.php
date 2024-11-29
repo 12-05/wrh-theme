@@ -40,6 +40,9 @@ if ($hero['aktiv']) {?>
         <a <?php if ($hero['size']) {?>style="width:<?php echo $hero['size']; ?>px;height:<?php echo $hero['size']; ?>px"<?php }?> class="hero-aktion" href="<?php echo $hero['link']; ?>"><img src="<?php echo $hero['bild']; ?>" alt="Aktion" /></a>
         <?php }?>
 </div>
+
+<iframe src="https://api.trustyou.com/hotels/2750b1b3-7381-4f7e-bd37-44f73d0bed78/trust_score.html?key=2f30665d-e868-4f32-8244-02b6dc8e9640&size=xl&scale=5" scrolling="no" height="144" width="170" style="border:none"></iframe>
+<script async src="https://cdn.trustyou.com/v2/hotel/widget-ui/trustscore/trustscore.umd.js"></script>
 <style>
 
 
