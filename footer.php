@@ -74,7 +74,7 @@
 		<?php wp_footer();?>
 
 		<!-- analytics -->
-
+<script src='https://www.thehotelsnetwork.com/js/loader.js?property_id=1155784&account_key=393ECD2FD5784E9E14D71640C378C8AE' async></script>
 <noscript>
 
 <img height="1" width="1" src="https://www.facebook.com/tr?id=625913922411694&ev=PageView&noscript=1"/>
