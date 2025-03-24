@@ -25,17 +25,27 @@
             ],
             [
                 // Events with no end date - using EXISTS instead and negating it
-                'relation' => 'OR',
+                'relation' => 'AND',
                 [
-                    'key'     => 'end',
-                    'compare' => 'NOT EXISTS',
+                    'key'     => 'start',
+                    'compare' => '>=',
+                    'value'   => $time_now,
                 ],
                 [
-                    'key'     => 'end',
-                    'compare' => '=',
-                    'value'   => '',
+                    // Events with no end date - using EXISTS instead and negating it
+                    'relation' => 'OR',
+                    [
+                        'key'     => 'end',
+                        'compare' => 'NOT EXISTS',
+                    ],
+                    [
+                        'key'     => 'end',
+                        'compare' => '=',
+                        'value'   => '',
+                    ],
                 ],
             ],
+
         ],
     ]);
 
