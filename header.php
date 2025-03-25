@@ -7,7 +7,7 @@
     }
 ?>
 <!doctype html>
-<html      <?php language_attributes(); ?> class="no-js">
+<html                               <?php language_attributes(); ?> class="no-js">
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php echo $title; ?></title>
@@ -25,7 +25,7 @@
 
 <script src='https://www.thehotelsnetwork.com/js/loader.js?property_id=1155784&account_key=393ECD2FD5784E9E14D71640C378C8AE' async></script>
 	</head>
-	<body	      <?php body_class(); ?>>
+	<body	     	     	     	     	     	      <?php body_class(); ?>>
 		<style>
 			@media(max-width:700px) {
 	body > iframe {
@@ -101,11 +101,11 @@ gs("GS00407",{ position : "center-left" });
    </div>
    <div class='booking'>
       <div class='gast'>Gäste</div>
-      <select name="gast" id="gast">
-        <?php for ($i = 1; $i < 10; $i++) {?>
-        <option<?php if ($i == 2) {echo 'selected="selected"';}?> value="<?php echo $i ?>"><?php echo $i ?></option>
-        <?php }?>
-     </select>
+	  <select name="gast" id="gast">
+    <?php for ($i = 1; $i < 10; $i++) {?>
+        <option<?php if ($i == 2) {echo ' selected="selected"';}?> value="<?php echo $i ?>"><?php echo $i ?></option>
+    <?php }?>
+</select>
   </div>
   <div class='button-group'>
      <div class='whr-button' id='find-room'>ZIMMER FINDEN</div>
