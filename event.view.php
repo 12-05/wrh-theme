@@ -20,7 +20,7 @@
         <?php endif; ?>
 
         <?php if (! empty($event['description'])): ?>
-        <div class="event-description"><?php echo wp_kses_post($event['description']); ?></div>
+        <div class="event-description"><?php echo wp_kses_post($event['description'],"post"); ?></div>
         <?php endif; ?>
 
         <?php if (! empty($event['event_link']) || ! empty($event['book_link'])): ?>
