@@ -19,12 +19,25 @@
         'meta_query'     => [
             'relation' => 'OR',
             [
-                'key'     => 'end',
-                'compare' => '>=',
-                'value'   => $time_now,
+                // Events with end date that hasn't passed yet
+                'relation' => 'AND',
+                [
+                    'key'     => 'end',
+                    'compare' => 'EXISTS',
+                ],
+                [
+                    'key'     => 'end',
+                    'compare' => '!=',
+                    'value'   => '',
+                ],
+                [
+                    'key'     => 'end',
+                    'compare' => '>=',
+                    'value'   => $time_now,
+                ],
             ],
             [
-                // Events with no end date - using EXISTS instead and negating it
+                // Events without end date but start date in future
                 'relation' => 'AND',
                 [
                     'key'     => 'start',
@@ -32,7 +45,6 @@
                     'value'   => $time_now,
                 ],
                 [
-                    // Events with no end date - using EXISTS instead and negating it
                     'relation' => 'OR',
                     [
                         'key'     => 'end',
@@ -45,7 +57,6 @@
                     ],
                 ],
             ],
-
         ],
     ]);
 
