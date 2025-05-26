@@ -25,12 +25,12 @@
 
         <?php if (! empty($event['event_link']) || ! empty($event['book_link'])): ?>
         <div class="event-actions">
-            <a href="#"  class="whr-button more more-button"  style="background:#333">
+            <div href="#"  class="whr-button more more-button"  style="background:#333">
                 Weitere Infos
-            </a>
-            <a  href="#"  class="whr-button more less-button"  style="background:#CCC;display:none">
+            </div>
+            <div  href="#"  class="whr-button more less-button"  style="background:#CCC;display:none">
                 weniger Infos
-            </a>
+            </div>
             <?php if (! empty($event['event_link']) && ! empty($event['event_link']['url'])): ?>
                 <a href="<?php echo esc_url($event['event_link']['url']); ?>" class="whr-button">
                     <?php echo esc_html($event['event_link']['title']); ?>
