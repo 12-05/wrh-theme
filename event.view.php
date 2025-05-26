@@ -1,4 +1,4 @@
-<div class="event">
+<div class="event" id="event-<?php echo esc_attr($event['id']); ?>">
 <div class="event-image-container">
 
     <?php if (! empty($event['thumbnail'])): ?>
@@ -20,11 +20,17 @@
         <?php endif; ?>
 
         <?php if (! empty($event['description'])): ?>
-        <div class="event-description"><?php echo wp_kses_post($event['description'],"post"); ?></div>
+        <div class="event-description" style="display:none"><?php echo wp_kses_post($event['description'],"post"); ?></div>
         <?php endif; ?>
 
         <?php if (! empty($event['event_link']) || ! empty($event['book_link'])): ?>
         <div class="event-actions">
+            <a href="#"  class="whr-button more more-button"  style="background:#333">
+                Weitere Infos
+            </a>
+            <a  href="#"  class="whr-button more less-button"  style="background:#CCC;display:none">
+                weniger Infos
+            </a>
             <?php if (! empty($event['event_link']) && ! empty($event['event_link']['url'])): ?>
                 <a href="<?php echo esc_url($event['event_link']['url']); ?>" class="whr-button">
                     <?php echo esc_html($event['event_link']['title']); ?>
@@ -40,3 +46,37 @@
         <?php endif; ?>
     </div>
 </div>
+
+<script>
+    const event = document.getElementById('event-<?php echo esc_attr($event['id']); ?>');
+    event.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (e.target.classList.contains('more')) {
+            if(event.classList.contains('expanded')) {
+                event.classList.remove('expanded');
+            } else {
+                event.classList.add('expanded');
+            }
+        } 
+    });
+
+</script>
+
+<style>
+
+    .event.expanded .event-description {
+        display:block!important;
+    }
+
+    .event.expanded .more-button {
+        display:none!important;
+    }
+
+     .event.expanded .less-button {
+        display:block!important;
+    }
+
+
+
+   
+</style>
