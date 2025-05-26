@@ -50,8 +50,9 @@
 <script>
     const event = document.getElementById('event-<?php echo esc_attr($event['id']); ?>');
     event.addEventListener('click', function (e) {
-        e.preventDefault();
         if (e.target.classList.contains('more')) {
+                    e.preventDefault();
+
             if(event.classList.contains('expanded')) {
                 event.classList.remove('expanded');
             } else {
