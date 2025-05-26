@@ -14,7 +14,8 @@
     $events = get_posts([
         'post_type'      => 'event',
         'posts_per_page' => -1,
-        'orderby'        => 'start',
+        'orderby'        => 'meta_value_num',
+        'meta_key'       => 'start',
         'order'          => 'ASC',
         'meta_query'     => [
             'relation' => 'OR',
@@ -80,6 +81,12 @@
         "11" => 'November',
         "12" => 'Dezember',
     ];
+
+    // Sort years and months properly
+    ksort($eventData); // Sort years ascending
+    foreach ($eventData as $year => $months) {
+        ksort($eventData[$year]); // Sort months ascending within each year
+    }
 
     foreach ($eventData as $year => $months) {
         foreach ($months as $month => $events) {
