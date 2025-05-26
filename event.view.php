@@ -25,20 +25,20 @@
 
         <?php if (! empty($event['event_link']) || ! empty($event['book_link'])): ?>
         <div class="event-actions">
-            <div href="#"  class="whr-button more more-button"  style="background:#333">
+            <div href="#"  class="whr-button more more-button"  style="background:#333;font-size:1rem">
                 Weitere Infos
             </div>
-            <div  href="#"  class="whr-button more less-button"  style="background:#CCC;display:none">
+            <div  href="#"  class="whr-button more less-button"  style="background:#CCC;display:none;font-size:1rem">
                 weniger Infos
             </div>
             <?php if (! empty($event['event_link']) && ! empty($event['event_link']['url'])): ?>
-                <a href="<?php echo esc_url($event['event_link']['url']); ?>" class="whr-button">
-                    <?php echo esc_html($event['event_link']['title']); ?>
+                <a href="<?php echo esc_url($event['event_link']['url']); ?>" class="whr-button" style="font-size:1rem">
+                    Website öffnen
                 </a>
             <?php endif; ?>
 
             <?php if (! empty($event['book_link']) && ! empty($event['book_link']['url'])): ?>
-                <a href="<?php echo esc_url($event['book_link']['url']); ?>" class="whr-button black">
+                <a href="<?php echo esc_url($event['book_link']['url']); ?>" class="whr-button black" style="font-size:1rem">
                     <?php echo esc_html($event['book_link']['title']); ?>
                 </a>
             <?php endif; ?>
