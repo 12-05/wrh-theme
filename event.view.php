@@ -1,4 +1,4 @@
-<div class="event">
+<div class="event" id="event-<?php echo esc_attr($event['id']); ?>">
 <div class="event-image-container">
 
     <?php if (! empty($event['thumbnail'])): ?>
@@ -20,19 +20,25 @@
         <?php endif; ?>
 
         <?php if (! empty($event['description'])): ?>
-        <div class="event-description"><?php echo wp_kses_post($event['description']); ?></div>
+        <div class="event-description" style="display:none"><?php echo wp_kses_post($event['description'],"post"); ?></div>
         <?php endif; ?>
 
         <?php if (! empty($event['event_link']) || ! empty($event['book_link'])): ?>
         <div class="event-actions">
+            <div href="#"  class="whr-button more more-button"  style="background:#333;font-size:1rem">
+                Weitere Infos
+            </div>
+            <div  href="#"  class="whr-button more less-button"  style="background:#CCC;display:none;font-size:1rem">
+                weniger Infos
+            </div>
             <?php if (! empty($event['event_link']) && ! empty($event['event_link']['url'])): ?>
-                <a href="<?php echo esc_url($event['event_link']['url']); ?>" class="whr-button">
-                    <?php echo esc_html($event['event_link']['title']); ?>
+                <a href="<?php echo esc_url($event['event_link']['url']); ?>" class="whr-button" style="font-size:1rem">
+                    Website öffnen
                 </a>
             <?php endif; ?>
 
             <?php if (! empty($event['book_link']) && ! empty($event['book_link']['url'])): ?>
-                <a href="<?php echo esc_url($event['book_link']['url']); ?>" class="whr-button black">
+                <a href="<?php echo esc_url($event['book_link']['url']); ?>" class="whr-button black" style="font-size:1rem">
                     <?php echo esc_html($event['book_link']['title']); ?>
                 </a>
             <?php endif; ?>
@@ -40,3 +46,38 @@
         <?php endif; ?>
     </div>
 </div>
+
+<script>
+    const event = document.getElementById('event-<?php echo esc_attr($event['id']); ?>');
+    event.addEventListener('click', function (e) {
+        if (e.target.classList.contains('more')) {
+                    e.preventDefault();
+
+            if(event.classList.contains('expanded')) {
+                event.classList.remove('expanded');
+            } else {
+                event.classList.add('expanded');
+            }
+        } 
+    });
+
+</script>
+
+<style>
+
+    .event.expanded .event-description {
+        display:block!important;
+    }
+
+    .event.expanded .more-button {
+        display:none!important;
+    }
+
+     .event.expanded .less-button {
+        display:block!important;
+    }
+
+
+
+   
+</style>

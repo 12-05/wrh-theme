@@ -14,17 +14,31 @@
     $events = get_posts([
         'post_type'      => 'event',
         'posts_per_page' => -1,
-        'orderby'        => 'start',
+        'orderby'        => 'meta_value_num',
+        'meta_key'       => 'start',
         'order'          => 'ASC',
         'meta_query'     => [
             'relation' => 'OR',
             [
-                'key'     => 'end',
-                'compare' => '>=',
-                'value'   => $time_now,
+                // Events with end date that hasn't passed yet
+                'relation' => 'AND',
+                [
+                    'key'     => 'end',
+                    'compare' => 'EXISTS',
+                ],
+                [
+                    'key'     => 'end',
+                    'compare' => '!=',
+                    'value'   => '',
+                ],
+                [
+                    'key'     => 'end',
+                    'compare' => '>=',
+                    'value'   => $time_now,
+                ],
             ],
             [
-                // Events with no end date - using EXISTS instead and negating it
+                // Events without end date but start date in future
                 'relation' => 'AND',
                 [
                     'key'     => 'start',
@@ -32,7 +46,6 @@
                     'value'   => $time_now,
                 ],
                 [
-                    // Events with no end date - using EXISTS instead and negating it
                     'relation' => 'OR',
                     [
                         'key'     => 'end',
@@ -45,7 +58,6 @@
                     ],
                 ],
             ],
-
         ],
     ]);
 
@@ -69,6 +81,12 @@
         "11" => 'November',
         "12" => 'Dezember',
     ];
+
+    // Sort years and months properly
+    ksort($eventData); // Sort years ascending
+    foreach ($eventData as $year => $months) {
+        ksort($eventData[$year]); // Sort months ascending within each year
+    }
 
     foreach ($eventData as $year => $months) {
         foreach ($months as $month => $events) {
