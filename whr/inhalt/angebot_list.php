@@ -33,13 +33,15 @@ if ($angebots) {
   <div class='angebot-list-items'>
     <?php if ($angebots) {foreach ($angebots as $angebot) {$punkte = get_field('punkte', $angebot);
     $link = get_field('link', $angebot)['url'];
-    if (weglot_get_current_language() == 'en') {
-        $link = str_replace('/de/', '/en/', $link);
+    if(function_exists('weglot_get_current_language')) {
+      if (weglot_get_current_language() == 'en') {
+          $link = str_replace('/de/', '/en/', $link);
+      }
     }
     $permalink = $link ? $link : get_permalink($angebot->ID);?>
       <a target="_blank" class='all item visible <?php foreach (get_field('kategorie', $angebot) as $kat) {echo ' ' . $kat;}?>' href='<?php echo $permalink; ?>'>
         <div class='item-image' >
-           <img src='<?php echo get_field('image', $angebot) ?>' />
+           <img src='<?php echo get_field('image', $angebot) ?>' alt="<?php echo esc_attr($angebot->post_name); ?>"/>
         </div>
         <div class='angebot-list-info'>
            <h2><?php echo get_field('headline', $angebot) ?></h2>
@@ -54,8 +56,10 @@ if ($angebots) {
            <?php }?>
            <?php if (get_field('link', $angebot)) {
         $link = get_field('link', $angebot)['url'];
-        if (weglot_get_current_language() == 'en') {
-            $link = str_replace('/de/', '/en', $link);
+        if(function_exists('weglot_get_current_language')) {
+            if (weglot_get_current_language() == 'en') {
+                $link = str_replace('/de/', '/en/', $link);
+            }
         }
 
         ?>

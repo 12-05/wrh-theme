@@ -28,10 +28,10 @@
 	<body	     	     	     	     	     	     	      <?php body_class(); ?>>
 		<style>
 			@media(max-width:700px) {
-	body > iframe {
-		display:none!important;
-	}
-}
+				body > iframe {
+					display:none!important;
+				}
+			}
 
 		</style>
 		<!--
@@ -108,6 +108,6 @@ gs("GS00407",{ position : "center-left" });
 </select>
   </div>
   <div class='button-group'>
-     <div class='whr-button' id='find-room'>ZIMMER FINDEN</div>
+     <button class='whr-button' id='find-room'>ZIMMER FINDEN</button>
   </div>
 </div>

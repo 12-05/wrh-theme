@@ -16,7 +16,7 @@ $types=get_field_object('field_6098fca180deb');
     ?>
     <a href='<?php echo the_permalink($room->ID)?>' class='room-container'>
       <div class='room-image' >
-        <img src='<?php  echo get_field('image',$room)?>' />
+        <img src='<?php  echo get_field('image',$room)?>'  alt='<?php  echo get_field('post_content',$room)?>'/>
       </div>
       <div class='room-info'>
         <h3><?php echo get_field('title',$room)?></h3>

@@ -1,4 +1,4 @@
-<div class='pageheader' style='background-image:url(<?php echo $block['image']?>)'>
+<div class='pageheader' style='background-image:url(<?php echo $block['image']['url']?>)' alt="<?php echo $block["image"]["alt"] ?>">
   <div class='pageheader-content'>
     <h1><?php echo $block['headline']?></h1>
     <p class='content-text'><?php echo $block['subline']?></p>

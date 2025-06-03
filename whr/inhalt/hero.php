@@ -24,7 +24,7 @@
     <?php if ($block['sidebar']) {?>
       <div class='hero-sidebar'>
          <?php foreach ($block['sidebar'] as $icon) {?>
-             <a style='background-color:<?php if ($icon['background'] == 'gold') {echo '#a8925e';} else {echo 'transparent';}?>' href='<?php echo $icon['link']['url'] ?>' class='hero-sidebar-box'>
+             <a style='background-color:<?php if ($icon['background'] == 'gold') {echo '#a8925e';} else {echo 'rgba(11, 11, 11, 0.7)';}?>' href='<?php echo $icon['link']['url'] ?>' class='hero-sidebar-box'>
                <img src='<?php echo $icon['icon'] ?>'> </img>
                <div><?php echo $icon['link']['title'] ?></div>
              </a>
