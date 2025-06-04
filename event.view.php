@@ -48,15 +48,15 @@
 </div>
 
 <script>
-    const event = document.getElementById('event-<?php echo esc_attr($event['id']); ?>');
-    event.addEventListener('click', function (e) {
+    const event<?php echo esc_attr($event['id']); ?> = document.getElementById('event-<?php echo esc_attr($event['id']); ?>');
+    event<?php echo esc_attr($event['id']); ?>.addEventListener('click', function (e) {
         if (e.target.classList.contains('more')) {
                     e.preventDefault();
 
-            if(event.classList.contains('expanded')) {
-                event.classList.remove('expanded');
+            if(event<?php echo esc_attr($event['id']); ?>.classList.contains('expanded')) {
+                event<?php echo esc_attr($event['id']); ?>.classList.remove('expanded');
             } else {
-                event.classList.add('expanded');
+                event<?php echo esc_attr($event['id']); ?>.classList.add('expanded');
             }
         } 
     });
