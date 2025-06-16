@@ -4,7 +4,7 @@
         <div class="headline"><?php echo $block['headline']; ?></div>
         <div class="text"><?php echo $block['subline']; ?></div>
         <?php if ($block['circle']['circle_aktiv']) {?>
-        <a href="<?php echo $block['circle']['circle_link']['url']; ?>" target="<?php echo $block['circle']['circle_link']['target']; ?>" class="circle <?php echo $block['circle']['circle_type']; ?> <?php echo $block['circle']['circle_position']; ?>" style="background-color:<?php echo $block['circle']['circle_color']; ?>">
+        <a name="circle" href="<?php echo $block['circle']['circle_link']['url']; ?>" target="<?php echo $block['circle']['circle_link']['target']; ?>" class="circle <?php echo $block['circle']['circle_type']; ?> <?php echo $block['circle']['circle_position']; ?>" style="background-color:<?php echo $block['circle']['circle_color']; ?>">
         <?php if ($block['circle']['circle_type'] === "star") {?>
             <div class="star-inner">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.201 29.676"><polygon points="15.602,0 19.325,11.279 31.2,11.332 21.624,18.36 25.243,29.676 15.602,22.738 5.96,29.676 9.577,18.36 0,11.332 11.878,11.279" fill="<?php echo $block['circle']['circle_color']; ?>" /></svg>
