@@ -96,16 +96,16 @@ gs("GS00407",{ position : "center-left" });
    <div class='booking-calendar'>
          <input type="text" id="start-text-calendar" class="calendar" ></input>
          <div class='start-date-container'>
-			<div style="color: white;" for="start-date" class='label'>Ankunft</div>
+			<label style="color: white;" for="start-date" class='label'>Ankunft</label>
 			<div id='start-date'></div>
          </div>
          <div>
-			<div style="color: white;" for="end-date" class='label'>Abreise</div>
+			<label style="color: white;" for="end-date" class='label'>Abreise</label>
 			<div id='end-date'></div>
         </div>
    </div>
    <div class='booking'>
-      <div style="color: white;" for="gast" class='gast'>Gäste</div>
+      <label style="color: white;" for="gast" class='gast'>Gäste</label>
 	  <select name="gast" id="gast" style="background: #333">
     <?php for ($i = 1; $i < 10; $i++) {?>
         <option<?php if ($i == 2) {echo ' selected="selected"';}?> value="<?php echo $i ?>"><?php echo $i ?></option>
