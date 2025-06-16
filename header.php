@@ -67,7 +67,7 @@ gs("GS00407",{ position : "center-left" });
 						</div>
 						<div class='icon-bar-big'>
 						<?php if ($logo) {?>
-							  <a target='_blank' href='<?php echo get_field('hotellink', 'option')['url'] ?>'><img src='<?php echo $logo ?>'/></a>
+							  <a target='_blank' href='<?php echo get_field('hotellink', 'option')['url'] ?>'><img alt="Weinromantikhotel Logo" src='<?php echo $logo ?>'/></a>
 						  <?php }?>
 						</div>
 					</div>
@@ -94,18 +94,19 @@ gs("GS00407",{ position : "center-left" });
 
 <div class='booking-bar'>
    <div class='booking-calendar'>
+		<div for="start-text-calendar" style="display: none;">Kalender</div>
          <input type="text" id="start-text-calendar" class="calendar" ></input>
          <div class='start-date-container'>
-                  <div for="start-date" class='label'>Ankunft</div>
-                  <div id='start-date'></div>
+			<div style="color: white;" for="start-date" class='label'>Ankunft</div>
+			<div id='start-date'></div>
          </div>
          <div>
-                 <div for="end-date" class='label'>Abreise</div>
-                 <div id='end-date'></div>
+			<div style="color: white;" for="end-date" class='label'>Abreise</div>
+			<div id='end-date'></div>
         </div>
    </div>
    <div class='booking'>
-      <div class='gast'>Gäste</div>
+      <div style="color: white;" for="gast" class='gast'>Gäste</div>
 	  <select name="gast" id="gast" style="background: #333">
     <?php for ($i = 1; $i < 10; $i++) {?>
         <option<?php if ($i == 2) {echo ' selected="selected"';}?> value="<?php echo $i ?>"><?php echo $i ?></option>
