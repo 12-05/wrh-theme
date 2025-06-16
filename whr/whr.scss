@@ -161,7 +161,8 @@ h3 {
 	margin: 16px 0;
 	width: fit-content;
 	color: white;
-	background-color: $gold;
+	// background-color: $gold;
+	background-color: #84724a;
 	cursor: pointer;
 	@include font-text-small();
 }

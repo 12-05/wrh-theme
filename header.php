@@ -94,7 +94,6 @@ gs("GS00407",{ position : "center-left" });
 
 <div class='booking-bar'>
    <div class='booking-calendar'>
-		<div for="start-text-calendar" style="display: none;">Kalender</div>
          <input type="text" id="start-text-calendar" class="calendar" ></input>
          <div class='start-date-container'>
 			<div style="color: white;" for="start-date" class='label'>Ankunft</div>
@@ -114,6 +113,6 @@ gs("GS00407",{ position : "center-left" });
 </select>
   </div>
   <div class='button-group'>
-     <button class='whr-button' id='find-room'>ZIMMER FINDEN</button>
+     <button for="start-text-calendar" class='whr-button' id='find-room'>ZIMMER FINDEN</button>
   </div>
 </div>
