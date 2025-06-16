@@ -54,11 +54,16 @@ gs("GS00407",{ position : "center-left" });
 
           <div class='icon-bar'>
 			            <div class='icon-bar-small'>
-						  <?php if ($icons) {
-                              foreach ($icons as $icon) {?>
-							  <a href='<?php echo $icon['link']['url'] ?>'><img src='<?php echo $icon['icon'] ?>'/></a>
-						  <?php }
-                          }?>
+						<?php
+							if ($icons) {
+								foreach ($icons as $index => $icon) { ?>
+									<a href='<?php echo $icon['link']['url']; ?>'>
+										<img alt="Sozial Media <?php echo $index + 1; ?>" src='<?php echo $icon['icon']; ?>'/>
+									</a>
+									<?php
+								}
+							}
+						?>
 						</div>
 						<div class='icon-bar-big'>
 						<?php if ($logo) {?>
@@ -91,11 +96,11 @@ gs("GS00407",{ position : "center-left" });
    <div class='booking-calendar'>
          <input type="text" id="start-text-calendar" class="calendar" ></input>
          <div class='start-date-container'>
-                  <div class='label'>Ankunft</div>
+                  <div for="start-date" class='label'>Ankunft</div>
                   <div id='start-date'></div>
          </div>
          <div>
-                 <div class='label'>Abreise</div>
+                 <div for="end-date" class='label'>Abreise</div>
                  <div id='end-date'></div>
         </div>
    </div>
