@@ -96,7 +96,7 @@ gs("GS00407",{ position : "center-left" });
    <div class='booking-calendar'>
          <input type="text" id="start-text-calendar" class="calendar" ></input>
          <div class='start-date-container'>
-			<label style="color: white;" for="start-date" class='label'>Ankunft</label>
+			<label style="color: white;" for="start-text-calendar" class='label'>Ankunft</label>
 			<div id='start-date'></div>
          </div>
          <div>
