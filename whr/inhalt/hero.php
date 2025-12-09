@@ -28,15 +28,15 @@
 <div class="highlights">
 <?php $highlights = $block['highlights'];
 if ($highlights): foreach ($highlights as $highlight): ?>
-						<a class="highlight" href="<?php echo $highlight['link'] ? $highlight['link']['url'] : '' ?>">
-						    <img src="<?php echo $highlight['image'] ?>" alt="<?php echo $highlight['title'] ?>">
-	                        <div class="highlight-content">
-							<div class="title"><?php echo $highlight['title'] ?></div>
-					        <div class="text"><?php echo $highlight['text'] ?></div>
-	</div>
-						</a>
+								<a target="_blank" class="highlight" href="<?php echo $highlight['link'] ? $highlight['link']['url'] : '' ?>">
+								    <img src="<?php echo $highlight['image'] ?>" alt="<?php echo $highlight['title'] ?>">
+			                        <div class="highlight-content">
+									<div class="title"><?php echo $highlight['title'] ?></div>
+							        <div class="text"><?php echo $highlight['text'] ?></div>
+			</div>
+								</a>
 
-								<?php endforeach;endif; ?>
+										<?php endforeach;endif; ?>
 </div
 
 <iframe title="Trust You" style="z-Index:999999999;position:absolute;right:2rem;bottom:2rem;border:0px" class="ty-widget" src="https://api.trustyou.com/hotels/2750b1b3-7381-4f7e-bd37-44f73d0bed78/trust_score.html?key=2f30665d-e868-4f32-8244-02b6dc8e9640&size=xl&scale=5" scrolling="no" height="144" width="170" style="border:none"></iframe>
