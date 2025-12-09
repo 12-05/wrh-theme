@@ -6,7 +6,7 @@
     }
 ?>
 <!doctype html>
-<html                                    <?php language_attributes(); ?> class="no-js">
+<html                                         <?php language_attributes(); ?> class="no-js">
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php echo $title; ?></title>
@@ -24,7 +24,7 @@
 
 <script src='https://www.thehotelsnetwork.com/js/loader.js?property_id=1155784&account_key=393ECD2FD5784E9E14D71640C378C8AE' async></script>
 	</head>
-	<body	     	     	     	     	     	     	      <?php body_class(); ?>>
+	<body	     	     	     	     	     	     	     	      <?php body_class(); ?>>
 		<style>
 			@media(max-width:700px) {
 				body > iframe {
@@ -54,15 +54,15 @@ gs("GS00407",{ position : "center-left" });
           <div class='icon-bar'>
 			            <div class='icon-bar-small'>
 						<?php
-							if ($icons) {
-								foreach ($icons as $index => $icon) { ?>
+                            if ($icons) {
+                            foreach ($icons as $index => $icon) {?>
 									<a href='<?php echo $icon['link']['url']; ?>'>
-										<img alt="Sozial Media <?php echo $index + 1; ?>" src='<?php echo $icon['icon']; ?>'/>
+										<img alt="Sozial Media										                       <?php echo $index + 1; ?>" src='<?php echo $icon['icon']; ?>'/>
 									</a>
 									<?php
-								}
-							}
-						?>
+                                        }
+                                        }
+                                    ?>
 						</div>
 						<div class='icon-bar-big'>
 						<?php if ($logo) {?>
@@ -74,12 +74,12 @@ gs("GS00407",{ position : "center-left" });
                           <img src='<?php echo the_field('logo_small', 'option') ?>'/>
 					</a>
 				  <div class='header-menu-bar' >
-					  <?php 
-							$booklink = get_field('buchen', 'option');
-							   		if(function_exists('weglot_get_current_language')) {
-										$booklink = str_replace('/de/', '/'.weglot_get_current_language().'/', $booklink);
-									}		
-							   ?>
+					  <?php
+                          $booklink = get_field('buchen', 'option');
+                          if (function_exists('weglot_get_current_language')) {
+                              $booklink = str_replace('/de/', '/' . weglot_get_current_language() . '/', $booklink);
+                          }
+                      ?>
 				  		<a href='/sonderangebote'>ANGEBOTE</a>
 						<a href='/zimmer'>ZIMMER</a>
 						<a href='/tagen-und-feiern'>FEIERN & TAGEN</a>
@@ -98,14 +98,14 @@ gs("GS00407",{ position : "center-left" });
 
 
 <div class='booking-bar'>
-	<?php 
-		$lang = "de";
-		if(function_exists('weglot_get_current_language')) {
-			$lang = weglot_get_current_language();
-		}
-?>
-	<input type="hidden" id="lang" value="<?php echo $lang;?>" />
-	
+	<?php
+        $lang = "de";
+        if (function_exists('weglot_get_current_language')) {
+            $lang = weglot_get_current_language();
+        }
+    ?>
+	<input type="hidden" id="lang" value="<?php echo $lang; ?>" />
+
    <div class='booking-calendar'>
          <input type="text" id="start-text-calendar" class="calendar" ></input>
          <div class='start-date-container'>

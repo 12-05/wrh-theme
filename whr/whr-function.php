@@ -5,18 +5,18 @@ require_once 'whr-post.php';
 
 function enque_whr_stuff()
 {
-    wp_enqueue_style('whr-style', get_template_directory_uri() . '/whr/whr.css');
+    wp_enqueue_style('whr-style', get_template_directory_uri() . '/whr/whr.css', [], time());
     wp_enqueue_style('whr-font-noto', 'https://fonts.12-05.com/notoserif/style.css');
     wp_enqueue_style('whr-font-work', 'https://fonts.12-05.com/work/style.css');
-    wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+    wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', [], null, true);
     wp_enqueue_style('whr-slider', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
-    wp_enqueue_script('whr-slider-script', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), '1.8.1', true);
-    wp_enqueue_script('whr-calendar-script2', get_template_directory_uri() . '/whr/pickmeup.min.js', array('jquery'), '1.4.14', true);
-    wp_enqueue_script('whr-scroll-reveal', 'https://unpkg.com/scrollreveal', array('jquery'), '1.4.1', true);
+    wp_enqueue_script('whr-slider-script', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', ['jquery'], '1.8.1', true);
+    wp_enqueue_script('whr-calendar-script2', get_template_directory_uri() . '/whr/pickmeup.min.js', ['jquery'], '1.4.14', true);
+    wp_enqueue_script('whr-scroll-reveal', 'https://unpkg.com/scrollreveal', ['jquery'], '1.4.1', true);
     wp_enqueue_style('whr-calendar-style2', get_template_directory_uri() . '/whr/pickmeup.css');
     //wp_enqueue_script( 'whr-reveal', 'https://unpkg.com/scrollreveal', array('jquery'), '1.8.1', false );
     //wp_enqueue_script( 'whr-number', '//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js', array('jquery'), '2.0.6', false );
-    wp_enqueue_script('whr-script', get_template_directory_uri() . '/whr/whr.js', array(), '1.0.1', true);
+    wp_enqueue_script('whr-script', get_template_directory_uri() . '/whr/whr.js', [], '1.0.1', true);
 }
 add_action('wp_enqueue_scripts', 'enque_whr_stuff');
 
@@ -65,25 +65,25 @@ function my_acf_op_init()
     if (function_exists('acf_add_options_page')) {
 
         // Register options page.
-        $option_page = acf_add_options_page(array(
+        $option_page = acf_add_options_page([
             'page_title' => __('WRH Settings'),
             'menu_title' => __('WRH Settings'),
-            'menu_slug' => 'WRH-settings',
+            'menu_slug'  => 'WRH-settings',
             'capability' => 'manage_options',
-            'redirect' => false,
-        ));
+            'redirect'   => false,
+        ]);
     }
 
     function render_content($id = null)
     {
-        if (!$id) {
+        if (! $id) {
             $id = get_the_id();
         }
         $content = get_field('inhalt', $id);
         if ($content) {
             foreach ($content as $block) {
                 $template = get_template_directory() . '/whr/inhalt/' . $block['acf_fc_layout'] . '.php';
-                if (!file_exists($template)) {
+                if (! file_exists($template)) {
                     echo '<div class="row layout-' . $block['acf_fc_layout'] . '">Achtung, kein Templatefile definiert: ' . $block['acf_fc_layout'] . '</div>';
                     continue;
                 }
@@ -101,9 +101,9 @@ add_action('init', 'register_my_menu');
 function register_my_menu()
 {
     register_nav_menus(
-        array(
+        [
             'whr-menu' => __('WHR Menu'),
-        )
+        ]
     );
 }
 
