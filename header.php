@@ -1,4 +1,3 @@
-
 <?php
     if (get_field('title')) {
         $title = get_field('title') . ' – ' . get_bloginfo('name');
@@ -54,15 +53,20 @@ gs("GS00407",{ position : "center-left" });
 
           <div class='icon-bar'>
 			            <div class='icon-bar-small'>
-						  <?php if ($icons) {
-                              foreach ($icons as $icon) {?>
-							  <a href='<?php echo $icon['link']['url'] ?>'><img src='<?php echo $icon['icon'] ?>'/></a>
-						  <?php }
-                          }?>
+						<?php
+							if ($icons) {
+								foreach ($icons as $index => $icon) { ?>
+									<a href='<?php echo $icon['link']['url']; ?>'>
+										<img alt="Sozial Media <?php echo $index + 1; ?>" src='<?php echo $icon['icon']; ?>'/>
+									</a>
+									<?php
+								}
+							}
+						?>
 						</div>
 						<div class='icon-bar-big'>
 						<?php if ($logo) {?>
-							  <a target='_blank' href='<?php echo get_field('hotellink', 'option')['url'] ?>'><img src='<?php echo $logo ?>'/></a>
+							  <a target='_blank' href='<?php echo get_field('hotellink', 'option')['url'] ?>'><img alt="Weinromantikhotel Logo" src='<?php echo $logo ?>'/></a>
 						  <?php }?>
 						</div>
 					</div>
@@ -70,10 +74,16 @@ gs("GS00407",{ position : "center-left" });
                           <img src='<?php echo the_field('logo_small', 'option') ?>'/>
 					</a>
 				  <div class='header-menu-bar' >
+					  <?php 
+							$booklink = get_field('buchen', 'option');
+							   		if(function_exists('weglot_get_current_language')) {
+										$booklink = str_replace('/de/', '/'.weglot_get_current_language().'/', $booklink);
+									}		
+							   ?>
 				  		<a href='/sonderangebote'>ANGEBOTE</a>
 						<a href='/zimmer'>ZIMMER</a>
 						<a href='/tagen-und-feiern'>FEIERN & TAGEN</a>
-						<a href='<?php echo get_field('buchen', 'option') ?>'>BUCHEN</a>
+						<a href='<?php echo $booklink; ?>'>BUCHEN</a>
 						<div id="weglot_here"></div>
 						<div style="width:2rem"></div>
 						<div id='header-burger'></div>
@@ -88,19 +98,27 @@ gs("GS00407",{ position : "center-left" });
 
 
 <div class='booking-bar'>
+	<?php 
+		$lang = "de";
+		if(function_exists('weglot_get_current_language')) {
+			$lang = weglot_get_current_language();
+		}
+?>
+	<input type="hidden" id="lang" value="<?php echo $lang;?>" />
+	
    <div class='booking-calendar'>
          <input type="text" id="start-text-calendar" class="calendar" ></input>
          <div class='start-date-container'>
-                  <div class='label'>Ankunft</div>
-                  <div id='start-date'></div>
+			<label style="color: white;" for="start-text-calendar" class='label'>Ankunft</label>
+			<div id='start-date'></div>
          </div>
          <div>
-                 <div class='label'>Abreise</div>
-                 <div id='end-date'></div>
+			<label style="color: white;" for="end-date" class='label'>Abreise</label>
+			<div id='end-date'></div>
         </div>
    </div>
    <div class='booking'>
-      <div class='gast'>Gäste</div>
+      <label style="color: white;" for="gast" class='gast'>Gäste</label>
 	  <select name="gast" id="gast" style="background: #333">
     <?php for ($i = 1; $i < 10; $i++) {?>
         <option<?php if ($i == 2) {echo ' selected="selected"';}?> value="<?php echo $i ?>"><?php echo $i ?></option>
@@ -108,6 +126,6 @@ gs("GS00407",{ position : "center-left" });
 </select>
   </div>
   <div class='button-group'>
-     <button class='whr-button' id='find-room'>ZIMMER FINDEN</button>
+     <button for="start-text-calendar" class='whr-button' id='find-room'>ZIMMER FINDEN</button>
   </div>
 </div>

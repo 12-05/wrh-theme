@@ -161,7 +161,8 @@ h3 {
 	margin: 16px 0;
 	width: fit-content;
 	color: white;
-	background-color: $gold;
+	// background-color: $gold;
+	background-color: #84724a;
 	cursor: pointer;
 	@include font-text-small();
 }
@@ -1125,7 +1126,7 @@ h3 {
 }
 
 .footer {
-	background-color: $black;
+	background-color: #111 !important;
 	color: white;
 	padding: 80px 320px 160px 320px;
 	display: flex;

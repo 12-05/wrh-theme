@@ -150,6 +150,8 @@ jQuery(document).ready(function ($) {
 			overflow: "auto",
 		});
 	});
+	
+	const lang = $('#lang')?.val() || "de";
 
 	$("#find-room").click(function () {
 		let gast = $("#gast").val();
@@ -158,7 +160,7 @@ jQuery(document).ready(function ($) {
 				arrival +
 				"&dateTo=" +
 				departure +
-				"&LanguageCode=de&&adults=" +
+				"&LanguageCode="+lang+"&&adults=" +
 				gast +
 				"&childrenAges=&searchModules=Accommodation&"
 		);
