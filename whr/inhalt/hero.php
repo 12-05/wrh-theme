@@ -27,7 +27,17 @@
 </div>
 <div class="highlights">
 <?php $highlights = $block['highlights'];
-if ($highlights): foreach ($highlights as $highlight): ?>
+if ($highlights): foreach ($highlights as $highlight): 
+	$link = $highlight['link'] ? $highlight['link']['url']:"";
+    if(function_exists('weglot_get_current_language')) {
+      if (weglot_get_current_language() == 'en') {
+        $link = str_replace('/de/', '/en/', $link);
+		$link = str_replace('=de', '=en', $link);
+      }
+		
+    }
+	
+	?>
 								<a target="_blank" class="highlight" href="<?php echo $highlight['link'] ? $highlight['link']['url'] : '' ?>">
 								    <img src="<?php echo $highlight['image'] ?>" alt="<?php echo $highlight['title'] ?>">
 			                        <div class="highlight-content">
