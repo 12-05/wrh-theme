@@ -38,7 +38,7 @@ if ($highlights): foreach ($highlights as $highlight):
     }
 	
 	?>
-								<a target="_blank" class="highlight" href="<?php echo $highlight['link'] ? $highlight['link']['url'] : '' ?>">
+								<a target="_blank" class="highlight" href="<?php echo $link; ?>">
 								    <img src="<?php echo $highlight['image'] ?>" alt="<?php echo $highlight['title'] ?>">
 			                        <div class="highlight-content">
 									<div class="title"><?php echo $highlight['title'] ?></div>
