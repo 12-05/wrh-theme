@@ -56,6 +56,18 @@ if ($highlights): foreach ($highlights as $highlight):
 		.ty-widget {
 			display:none!important;
 		}
+		
+	}
+
+	@media(max-height:700px) {
+		.logo {
+			height:120px!important;
+			width:auto;
+		}
+		.headline {
+			font-size:32px;
+			line-height:42px;
+		}
 	}
 
 </style>
