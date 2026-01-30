@@ -27,17 +27,17 @@
 </div>
 <div class="highlights">
 <?php $highlights = $block['highlights'];
-if ($highlights): foreach ($highlights as $highlight): 
-	$link = $highlight['link'] ? $highlight['link']['url']:"";
-    if(function_exists('weglot_get_current_language')) {
-      if (weglot_get_current_language() == 'en') {
-        $link = str_replace('/de/', '/en/', $link);
-		$link = str_replace('=de', '=en', $link);
-      }
-		
-    }
-	
-	?>
+    if ($highlights): foreach ($highlights as $highlight):
+        $link = $highlight['link'] ? $highlight['link']['url'] : "";
+        if (function_exists('weglot_get_current_language')) {
+            if (weglot_get_current_language() == 'en') {
+                $link = str_replace('/de/', '/en/', $link);
+                $link = str_replace('=de', '=en', $link);
+            }
+
+        }
+
+?>
 								<a target="_blank" class="highlight" href="<?php echo $link; ?>">
 								    <img src="<?php echo $highlight['image'] ?>" alt="<?php echo $highlight['title'] ?>">
 			                        <div class="highlight-content">
@@ -56,13 +56,14 @@ if ($highlights): foreach ($highlights as $highlight):
 		.ty-widget {
 			display:none!important;
 		}
-		
+
 	}
 
-	@media(max-height:700px) {
+	@media(max-height:900px) {
 		.logo {
-			height:120px!important;
+			height:150px!important;
 			width:auto;
+            transition: all 0.5s ease;
 		}
 		.headline {
 			font-size:32px!important;
