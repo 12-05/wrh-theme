@@ -68,6 +68,10 @@ if ($highlights): foreach ($highlights as $highlight):
 			font-size:32px!important;
 			line-height:42px!important;
 		}
+
+		.hero {
+			max-height:100vh!important;
+		}
 	}
 
 </style>
