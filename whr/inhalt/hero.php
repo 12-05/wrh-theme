@@ -65,8 +65,8 @@ if ($highlights): foreach ($highlights as $highlight):
 			width:auto;
 		}
 		.headline {
-			font-size:32px;
-			line-height:42px;
+			font-size:32px!important;
+			line-height:42px!important;
 		}
 	}
 
